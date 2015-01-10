@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		5230BD301A6087C800F3694C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5230BD2F1A6087C800F3694C /* main.m */; };
 		5230BD331A6087C800F3694C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5230BD321A6087C800F3694C /* AppDelegate.m */; };
-		5230BD361A6087C800F3694C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5230BD351A6087C800F3694C /* ViewController.m */; };
-		5230BD391A6087C800F3694C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5230BD371A6087C800F3694C /* Main.storyboard */; };
 		5230BD3B1A6087C800F3694C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230BD3A1A6087C800F3694C /* Images.xcassets */; };
-		5230BD3E1A6087C800F3694C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5230BD3C1A6087C800F3694C /* LaunchScreen.xib */; };
 		5230BD4A1A6087C800F3694C /* myBLEDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5230BD491A6087C800F3694C /* myBLEDemoTests.m */; };
+		5230BD561A6089C800F3694C /* CZLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5230BD541A6089C800F3694C /* CZLViewController.m */; };
+		5230BD571A6089C800F3694C /* CZLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5230BD551A6089C800F3694C /* CZLViewController.xib */; };
+		5230BD591A60913700F3694C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5230BD581A60913700F3694C /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		5230BD2F1A6087C800F3694C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5230BD311A6087C800F3694C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5230BD321A6087C800F3694C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5230BD341A6087C800F3694C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5230BD351A6087C800F3694C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5230BD381A6087C800F3694C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5230BD3A1A6087C800F3694C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5230BD3D1A6087C800F3694C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5230BD431A6087C800F3694C /* myBLEDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myBLEDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5230BD481A6087C800F3694C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5230BD491A6087C800F3694C /* myBLEDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myBLEDemoTests.m; sourceTree = "<group>"; };
+		5230BD531A6089C800F3694C /* CZLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZLViewController.h; sourceTree = "<group>"; };
+		5230BD541A6089C800F3694C /* CZLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZLViewController.m; sourceTree = "<group>"; };
+		5230BD551A6089C800F3694C /* CZLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZLViewController.xib; sourceTree = "<group>"; };
+		5230BD581A60913700F3694C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5230BD591A60913700F3694C /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +84,10 @@
 			children = (
 				5230BD311A6087C800F3694C /* AppDelegate.h */,
 				5230BD321A6087C800F3694C /* AppDelegate.m */,
-				5230BD341A6087C800F3694C /* ViewController.h */,
-				5230BD351A6087C800F3694C /* ViewController.m */,
-				5230BD371A6087C800F3694C /* Main.storyboard */,
+				5230BD531A6089C800F3694C /* CZLViewController.h */,
+				5230BD541A6089C800F3694C /* CZLViewController.m */,
+				5230BD551A6089C800F3694C /* CZLViewController.xib */,
 				5230BD3A1A6087C800F3694C /* Images.xcassets */,
-				5230BD3C1A6087C800F3694C /* LaunchScreen.xib */,
 				5230BD2D1A6087C800F3694C /* Supporting Files */,
 			);
 			path = myBLEDemo;
@@ -96,6 +96,7 @@
 		5230BD2D1A6087C800F3694C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5230BD581A60913700F3694C /* CoreBluetooth.framework */,
 				5230BD2E1A6087C800F3694C /* Info.plist */,
 				5230BD2F1A6087C800F3694C /* main.m */,
 			);
@@ -199,8 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5230BD391A6087C800F3694C /* Main.storyboard in Resources */,
-				5230BD3E1A6087C800F3694C /* LaunchScreen.xib in Resources */,
+				5230BD571A6089C800F3694C /* CZLViewController.xib in Resources */,
 				5230BD3B1A6087C800F3694C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5230BD361A6087C800F3694C /* ViewController.m in Sources */,
 				5230BD331A6087C800F3694C /* AppDelegate.m in Sources */,
+				5230BD561A6089C800F3694C /* CZLViewController.m in Sources */,
 				5230BD301A6087C800F3694C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +242,6 @@
 			targetProxy = 5230BD441A6087C800F3694C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5230BD371A6087C800F3694C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5230BD381A6087C800F3694C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5230BD3C1A6087C800F3694C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5230BD3D1A6087C800F3694C /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5230BD4B1A6087C800F3694C /* Debug */ = {
@@ -343,7 +324,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = myBLEDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +336,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = myBLEDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
